@@ -1,0 +1,270 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+html,
+body {
+  background: url(https://demal.kz/local/images/xsite-bg.jpg.pagespeed.ic.Pg-QQS6j8g.webp);
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  list-style: none;
+  color: rgb(0, 0, 0);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.enter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 2px;
+
+  .button-log {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(18, 138, 0);
+    border-radius: 4px;
+    transition: 0.2s linear;
+  }
+  .button-s {
+    width: 70px;
+    height: 40px;
+    background-color: rgb(12, 92, 0);
+    border-radius: 4px;
+    transition: 0.2s linear;
+  }
+  .button-s:hover {
+    background-color: rgb(22, 165, 0);
+  }
+
+  .button-log:hover {
+    background-color: rgb(22, 165, 0);
+  }
+  .submit {
+    color: rgb(241, 241, 241);
+  }
+  .log {
+    color: rgb(241, 241, 241);
+  }
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  background: url("hero.jpg") no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 100px;
+}
+.video {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 30px;
+}
+.routes,
+.blog,
+.contact {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  height: 250px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #444;
+  transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #4caf50;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Contact Information */
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  font-size: 20px;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #4caf50;
+}
+
+.icon-l {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.icon-t {
+  width: 32x;
+  height: 32px;
+  border-radius: 2px;
+  background-color: none;
+}
+
+.button-t {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.2s linear;
+}
+.button-t:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 0 2px 0px #dad3d3;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("your-image-url.jpg"); /* Замените на ваш URL */
+  background-size: cover;
+  background-position: center;
+  color: rgb(12, 92, 0);
+  display: flex;
+}
+
+.hero .content {
+  text-align: start;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #000000; /* Цвет для части текста, как на изображении */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .cta {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(12, 92, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.2s linear;
+}
+
+.hero .cta:hover {
+  background-color: rgb(17, 124, 1);
+}
+
+.description {
+  font-size: 1rem;
+  width: 600px;
+  margin-top: 80px;
+  color: rgb(37, 37, 37);
+}

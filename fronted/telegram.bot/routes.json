@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Горный маршрут А",
+    "length": "10 км",
+    "season": "лето",
+    "type": "прогулки",
+    "link": "https://example.com/route/1"
+  },
+  {
+    "id": 2,
+    "name": "Горный маршрут B",
+    "length": "20 км",
+    "season": "зима",
+    "type": "трекинг",
+    "link": "https://example.com/route/2"
+  },
+  {
+    "id": 3,
+    "name": "Горный маршрут C",
+    "length": "15 км",
+    "season": "осень",
+    "type": "сложные маршруты",
+    "link": "https://example.com/route/3"
+  }
+]

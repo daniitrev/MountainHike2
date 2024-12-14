@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Маршруты</title>
+    <link rel="stylesheet" href="./css/routes.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+GB+J+Guides:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./images/logo.webp" alt="logo-image" class="icon-l" />
+          <a href="index.html" class="title">MountainHike</a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="routes.html">Routes</a></li>
+          <li><a href="#footer">Contact</a></li>
+
+          <div class="enter">
+            <button class="button-log">
+              <a href="blog.html" target="_blank" class="log">log in</a>
+            </button>
+            <!-- Button to trigger modal -->
+            <button id="openModalButton" class="openModalButton">
+              Sign Up
+            </button>
+
+            <!-- Modal and overlay -->
+            <div class="overlay" id="overlay"></div>
+
+            <div class="signup-card" id="signupCard">
+              <h2>Sign Up</h2>
+              <form action="/signup" method="POST">
+                <label for="first-name">First Name:</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Enter your first name"
+                  required
+                />
+
+                <label for="last-name">Last Name:</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Enter your last name"
+                  required
+                />
+
+                <label for="email">Email Id:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+
+                <label for="mobile">Mobile No.:</label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  placeholder="Enter your phone number"
+                  required
+                />
+
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="Confirm your password"
+                  required
+                />
+
+                <label for="company-name">Company Name:</label>
+                <input
+                  type="text"
+                  id="company-name"
+                  name="company-name"
+                  placeholder="Enter company name"
+                  required
+                />
+
+                <button type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+          <button class="button-t">
+            <a href="https://t.me/HikingHelper_Bot" target="_blank">
+              <img
+                src="./images/telegram.png"
+                alt="Telegram"
+                class="icon-t"
+                width="30px"
+                height="25px"
+              />
+            </a>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Лучшие хайкинговые маршруты</h1>
+      <section id="routes-list" class="routes-list">
+        <!-- Список маршрутов будет заполняться через JS -->
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo.webp" alt="Company Logo" />
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="social-icon facebook"
+            >Facebook</a
+          >
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="social-icon twitter"
+            >Twitter</a
+          >
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="social-icon instagram"
+            >Instagram</a
+          >
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-contact">
+        <div class="contact-item">
+          <span class="contact-icon">&#x1F4CD;</span>
+          <!-- Location Icon -->
+          <p>Almaty, Kazakhstan <br />Alfarabi 23, Workplace 113</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#9993;</span>
+          <!-- Email Icon -->
+          <a href="mailto:support@figma.com">support@figma.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#9742;</span>
+          <!-- Phone Icon -->
+          <a href="tel:+18008543680">+1 800 854-36-80</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 MountainHike. All that you need</p>
+      </div>
+    </footer>
+
+    <script src="../my-backend/server.js"></script>
+    <script src="telegram.bot/bot.js"></script>
+    <script src="./js/routes.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/blog.js"></script>
+  </body>
+</html>

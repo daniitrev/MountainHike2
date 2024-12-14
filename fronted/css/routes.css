@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.routes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.route-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.route-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.route-details {
+  flex: 1;
+}
+
+.route-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: green;
+  text-decoration: none;
+}
+
+.route-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.route-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.route-difficulty {
+  font-weight: bold;
+  color: green;
+}
+
+.route-difficulty.medium {
+  color: orange;
+}
+
+.route-difficulty.hard {
+  color: red;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+footer {
+  margin-top: 50px;
+}
